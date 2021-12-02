@@ -1,0 +1,10 @@
+/* Write your global styles here, in PostCSS syntax */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-field {
+	@apply rounded-md p-2 my-3 w-full outline-none;
+}
