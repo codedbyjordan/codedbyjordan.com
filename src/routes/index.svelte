@@ -141,24 +141,24 @@
 				<p
 					id="successText"
 					class="
-                    text-green-500
-                    font-bold
-                    animate-fadeIn
-                    items-center
-                    hidden
-                  "
+            text-green-500
+            font-bold
+            animate-fadeIn
+            items-center
+            hidden
+          "
 				>
 					Success! I will get back to you ASAP.
 				</p>
 				<p
 					id="errorText"
 					class="
-                    text-red-500
-                    font-bold
-                    animate-fadeIn
-                    items-center
-                    hidden
-                  "
+            text-red-500
+            font-bold
+            animate-fadeIn
+            items-center
+            hidden
+          "
 				>
 					Error! Please try again.
 				</p>
@@ -166,21 +166,21 @@
 				<button
 					type="submit"
 					class="
-                    rounded-full
-                    bg-transparent
-										border-4
-										border-[#A01232]
-                    text-[#A01232]
-                    px-8
-                    py-2
-										ml-auto
-                    text-darker-gray
-                    font-semibold
-                    transition
-                    ease-in-out
-                    duration-300
-                    hover:bg-[#A01232]
-                  "
+            rounded-full
+            bg-transparent
+						border-4
+						border-[#A01232]
+            text-[#A01232]
+            px-8
+            py-2
+						ml-auto
+            text-darker-gray
+            font-semibold
+            transition
+            ease-in-out
+            duration-300
+            hover:bg-[#A01232]
+          "
 				>
 					send
 				</button>
