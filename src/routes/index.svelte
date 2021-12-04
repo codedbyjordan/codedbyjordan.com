@@ -20,7 +20,7 @@
 </script>
 
 <!-- landing -->
-<div id="landing" class="h-[75vh] text-white flex flex-col items-center justify-center">
+<div id="home" class="h-[75vh] text-white flex flex-col items-center justify-center">
 	<div
 		class="w-full md:w-1/2 flex flex-col md:flex-row items-center justify-center"
 		data-aos-animate="fadeInDown"
@@ -48,7 +48,7 @@
 </div>
 
 <div class="flex flex-col bg-[#07050C] min-h-auto items-center flex-1 py-8">
-	<Section title="What I Do">
+	<Section id="about" title="What I Do">
 		<p class="text-sm md:text-lg pb-4">
 			I use numerous frameworks to develop fast, responsive, feature-rich web and mobile apps. Below
 			are some of my skills, feel free to check out my resume to see them all.
@@ -62,7 +62,7 @@
 			<i class="fas fa-terminal px-2" />
 		</div>
 	</Section>
-	<Section title="Projects">
+	<Section title="Projects" id="projects">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 			<Project
 				img="img/projects/ctrlv.svg"
@@ -109,7 +109,7 @@
 			/>
 		</div>
 	</Section>
-	<Section title="Get In Touch">
+	<Section id="contact" title="Get In Touch">
 		<p class="text-sm md:text-lg pb-4">
 			Interested in my work? Shoot me a message, I'll get back to you ASAP.
 		</p>
@@ -191,7 +191,7 @@
 </div>
 
 <style>
-	#landing {
+	#home {
 		background: #c31432; /* fallback for old browsers */
 		background: -webkit-linear-gradient(
 			to bottom,

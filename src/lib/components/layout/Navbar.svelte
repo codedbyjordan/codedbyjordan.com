@@ -24,9 +24,9 @@
         text-white"
 		>
 			<li class="px-2 py-1 md:py-0"><a href="/">Home</a></li>
-			<li class="px-2 py-1 md:py-0"><a href="/about">About</a></li>
-			<li class="px-2 py-1 md:py-0"><a href="/projects">Projects</a></li>
-			<li class="px-2 py-1 md:py-0"><a href="/contact">Contact</a></li>
+			<li class="px-2 py-1 md:py-0"><a href="/#about">About</a></li>
+			<li class="px-2 py-1 md:py-0"><a href="/#projects">Projects</a></li>
+			<li class="px-2 py-1 md:py-0"><a href="/#contact">Contact</a></li>
 		</ul>
 	</div>
 </nav>

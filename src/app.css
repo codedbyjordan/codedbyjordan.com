@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 .input-field {
 	@apply rounded-md p-2 my-3 w-full outline-none;
 }
