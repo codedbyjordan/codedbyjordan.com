@@ -21,10 +21,7 @@
 
 <!-- landing -->
 <div id="home" class="h-[75vh] text-white flex flex-col items-center justify-center">
-	<div
-		class="w-full md:w-1/2 flex flex-col md:flex-row items-center justify-center"
-		data-aos-animate="fadeInDown"
-	>
+	<div class="w-full md:w-1/2 flex flex-col md:flex-row items-center justify-center animate-fadeIn">
 		<img
 			src="img/me.webp"
 			alt="Jordan Baron"

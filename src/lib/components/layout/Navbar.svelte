@@ -1,6 +1,6 @@
 <nav class="bg-[#250B35] flex justify-center">
-	<div class="flex items-center justify-between w-11/12 lg:w-1/2 py-4">
-		<div>
+	<div class="flex items-center justify-between w-11/12 lg:w-1/2 py-4 animate-fadeIn">
+		<div class="">
 			<img src="img/logo.svg" alt="jordanbaron text logo" class="w-3/4" />
 		</div>
 		<label for="nav-toggle"
