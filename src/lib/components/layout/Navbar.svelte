@@ -23,10 +23,26 @@
 					peer-checked:text-right
         text-white"
 		>
-			<li class="px-2 py-1 md:py-0"><a href="/">Home</a></li>
-			<li class="px-2 py-1 md:py-0"><a href="/#about">About</a></li>
-			<li class="px-2 py-1 md:py-0"><a href="/#projects">Projects</a></li>
-			<li class="px-2 py-1 md:py-0"><a href="/#contact">Contact</a></li>
+			<li
+				class="px-2 py-1 md:py-0 border-b-2 border-transparent hover:border-b-white transition-all ease-in-out duration-300"
+			>
+				<a href="/">Home</a>
+			</li>
+			<li
+				class="px-2 py-1 md:py-0 border-b-2 border-transparent hover:border-b-white transition-all ease-in-out duration-300"
+			>
+				<a href="/#about">About</a>
+			</li>
+			<li
+				class="px-2 py-1 md:py-0 border-b-2 border-transparent hover:border-b-white transition-all ease-in-out duration-300"
+			>
+				<a href="/#projects">Projects</a>
+			</li>
+			<li
+				class="px-2 py-1 md:py-0 border-b-2 border-transparent hover:border-b-white transition-all ease-in-out duration-300"
+			>
+				<a href="/#contact">Contact</a>
+			</li>
 		</ul>
 	</div>
 </nav>

@@ -26,7 +26,7 @@
 		data-aos-animate="fadeInDown"
 	>
 		<img
-			src="img/me.png"
+			src="img/me.webp"
 			alt="Jordan Baron"
 			class="rounded-full border-4 md:border-7 border-white w-1/2 md:w-4/12"
 		/>
@@ -65,28 +65,28 @@
 	<Section title="Projects" id="projects">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 			<Project
-				img="img/projects/ctrlv.svg"
+				img="img/projects/ctrlv.webp"
 				name="ctrl+v"
 				description="Built with SvelteKit, ctrl+v is a site to quickly and easily paste code snippets to share with anyone."
 				codeUrl="https://github.com/codedbyjordan/ctrlv"
 				previewUrl="https://ctrlv-nine.vercel.app"
 			/>
 			<Project
-				img="img/projects/file_uploader.svg"
+				img="img/projects/file_uploader.webp"
 				name="File Uploader"
 				description="A simple file uploader built using React and Firebase. Started out as an image uploader via a tutorial from The Net Ninja"
 				codeUrl="https://github.com/codedbyjordan/file-uploader"
 				previewUrl="https://jmb.codes/file-uploader"
 			/>
 			<Project
-				img="img/projects/etherexplore.svg"
+				img="img/projects/etherexplore.webp"
 				name="ether.explore"
 				description="A small Ethereum blockchain explorer made using Svelte with Tailwind and SvelteKit"
 				codeUrl="https://github.com/codedbyjordan/ether-explore"
 				previewUrl="https://ether-explore.herokuapp.com/"
 			/>
 			<Project
-				img="img/projects/aos.svg"
+				img="img/projects/aos.webp"
 				name="AOS"
 				description="AOS is JavaScript library to easily animate elements when scrolled to. I made it with JavaScript using the IntersectionObserver API, using animations from Animate.css"
 				codeUrl="https://github.com/codedbyjordan/aos"
@@ -100,7 +100,7 @@
 				previewUrl="https://github.com/codedbyjordan/svelte-for-the-react-dev/blob/main/README.md"
 			/>
 			<Project
-				img="img/projects/hw_gaming.svg"
+				img="img/projects/hw_gaming.webp"
 				name="HW.tf"
 				description="A website made for a friend's Team Fortress server. Built entirely by me using
                 React with Gatsby.js"
