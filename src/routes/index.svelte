@@ -62,6 +62,20 @@
 	<Section title="Projects" id="projects">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 			<Project
+				img="img/projects/camp.webp"
+				name="Camp"
+				description="Camp is a PDF reader built with Electron, Svelte, Tailwind, and Vite."
+				codeUrl="https://github.com/codedbyjordan/camp"
+				previewUrl="https://github.com/codedbyjordan/camp"
+			/>
+			<Project
+				img="img/projects/mdref.webp"
+				name="Markdown Reference"
+				description="An extension for Raycast built using React, Raycast's own API, and data from MarkdownGuide's API"
+				codeUrl="https://github.com/codedbyjordan/camp"
+				previewUrl="https://github.com/codedbyjordan/camp"
+			/>
+			<Project
 				img="img/projects/ctrlv.webp"
 				name="ctrl+v"
 				description="Built with SvelteKit, ctrl+v is a site to quickly and easily paste code snippets to share with anyone."
@@ -77,8 +91,8 @@
 			/>
 			<Project
 				img="img/projects/etherexplore.webp"
-				name="ether.explore"
-				description="A small Ethereum blockchain explorer made using Svelte with Tailwind and SvelteKit"
+				name="ether.explore (read description)"
+				description="A small Ethereum blockchain explorer made using Svelte with Tailwind and SvelteKit NOTE: This project is hosted on Heroku, so it may take a bit to load."
 				codeUrl="https://github.com/codedbyjordan/ether-explore"
 				previewUrl="https://ether-explore.herokuapp.com/"
 			/>
