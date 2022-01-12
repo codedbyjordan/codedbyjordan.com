@@ -3,10 +3,7 @@
 	export let id: string;
 </script>
 
-<div
-	{id}
-	class="bg-[#45061F] w-11/12 lg:w-2/3 text-white py-8 px-6 md:px-12 my-4 rounded-xl shadow-md flex flex-col"
->
-	<h1 class="text-3xl font-bold pb-4">{title}</h1>
+<div {id} class="my-24">
+	<h1 class="text-2xl md:text-3xl font-bold pb-2">{title}</h1>
 	<slot />
 </div>
