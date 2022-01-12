@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="bg-[#0D0D0D] py-4 px-6 mt-4 mb-12 rounded-xl shadow-md flex flex-col h-42 md:h-[15.625rem] relative"
+	class="bg-[#0D0D0D] py-4 px-6 mt-4 mb-12 rounded-xl shadow-md flex flex-col h-42 md:h-[13.625rem] relative"
 >
 	<h1 class="font-bold text-xl md:text-2xl">{name}</h1>
 	<p class="my-2 text-sm md:text-base">{description}</p>
