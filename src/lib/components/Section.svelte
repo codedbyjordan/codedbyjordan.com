@@ -4,6 +4,6 @@
 </script>
 
 <div {id} class="my-24">
-	<h1 class="text-2xl md:text-3xl font-bold pb-2">{title}</h1>
+	<h1 class="text-3xl font-bold pb-2">{title}</h1>
 	<slot />
 </div>

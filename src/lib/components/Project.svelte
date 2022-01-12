@@ -11,7 +11,9 @@
 	<h1 class="font-bold text-xl md:text-2xl">{name}</h1>
 	<p class="my-2 text-xs md:text-base">{description}</p>
 
-	<div class="font-bold text-right text-sm md:text-base flex self-end absolute bottom-0 pb-6">
+	<div
+		class="font-bold text-right text-sm md:text-base flex self-end md:absolute md:bottom-0 md:pb-6"
+	>
 		<a href={codeUrl} class="underline mx-2">code</a>
 		<a href={previewUrl} class="underline">preview</a>
 	</div>
