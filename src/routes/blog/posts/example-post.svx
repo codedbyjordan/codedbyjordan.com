@@ -1,0 +1,11 @@
+---
+title: Example Post
+subtitle: An example post where I say that I love men...
+date: 01/12/2022
+---
+# {title}
+This is an example post! I love men...
+
+```js
+console.log("hello, world!");
+```
