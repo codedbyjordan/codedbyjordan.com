@@ -11,7 +11,7 @@
           peer-checked:py-2
         text-white"
 	>
-		<li><a href="#home" class="transition duration-150 hover:text-gray-400">home</a></li>
+		<li><a href="/" class="transition duration-150 hover:text-gray-400">home</a></li>
 		<li><a href="#about" class="transition duration-150 hover:text-gray-400">about</a></li>
 		<li><a href="#projects" class="transition duration-150 hover:text-gray-400">projects</a></li>
 		<li><a href="#contact" class="transition duration-150 hover:text-gray-400">contact</a></li>
