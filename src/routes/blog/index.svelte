@@ -27,7 +27,9 @@
 </script>
 
 <div class="mt-12">
-	<h1 class="text-4xl font-bold pb-2">posts</h1>
+	<h1 class="italic text-[#7a7a7a] text-2xl">"my thoughts, dreams, plots, and my schemes"</h1>
+	<p class="text-right mb-12">- Thebe Kgositsile</p>
+	<h2 class="text-4xl font-bold pb-2">posts</h2>
 	<ul class="pt-4 text-lg">
 		{#each posts as post}
 			<li class="pl-4">
