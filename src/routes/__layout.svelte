@@ -13,7 +13,7 @@
 				<img
 					src="https://pbs.twimg.com/profile_images/1478109827683528704/WT1Vl1cx_400x400.jpg"
 					alt="Jordan Baron"
-					class="rounded-full border-4 md:border-[6px] border-white w-4/5 h-4/5 md:w-5/12"
+					class="rounded-full border-4 md:border-[6px] border-white w-2/5 h-2/5 md:w-5/12"
 				/>
 				<Nav />
 			</div>
