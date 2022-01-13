@@ -9,6 +9,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	background-color: #010101;
+}
+
 .input-field {
 	@apply rounded-md p-2 my-3 w-full outline-none;
 }
