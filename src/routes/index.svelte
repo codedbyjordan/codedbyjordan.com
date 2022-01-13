@@ -25,25 +25,25 @@
 	<Section title="projects" id="projects">
 		<Project
 			name="Camp"
-			description="Camp is a PDF reader built with Electron, Svelte, Tailwind, and Vite."
+			description="Camp is a PDF reader built with Electron, Svelte, Tailwind, Vite, and TypeScript (although only with Svelte, not Electron)."
 			codeUrl="https://github.com/codedbyjordan/camp"
 			previewUrl="https://github.com/codedbyjordan/camp"
 		/>
 		<Project
 			name="Markdown Reference"
-			description="An extension for Raycast built using React, Raycast's own API, and data from MarkdownGuide's API"
+			description="Forgot how to use Markdown? I do, more than I'd like to admit. That's why I made Markdown Reference, an extension for Raycast built using React, Raycast's own API, and data from MarkdownGuide's API."
 			codeUrl="https://github.com/codedbyjordan/camp"
 			previewUrl="https://github.com/codedbyjordan/camp"
 		/>
 		<Project
 			name="ctrl+v"
-			description="Built with SvelteKit, ctrl+v is a site to quickly and easily paste code snippets to share with anyone."
+			description="Similar to HasteBin, ctrl+v is a site to quickly and easily paste code snippets to share with anyone. Built with SvelteKit, MongoDB, and Tailwind"
 			codeUrl="https://github.com/codedbyjordan/ctrlv"
 			previewUrl="https://ctrlv-nine.vercel.app"
 		/>
 		<Project
 			name="File Uploader"
-			description="A simple file uploader built using React and Firebase. Started out as an image uploader via a tutorial from The Net Ninja"
+			description="React and Firebase-based project built off of a tutorial by The Net Ninja"
 			codeUrl="https://github.com/codedbyjordan/file-uploader"
 			previewUrl="https://jmb.codes/file-uploader"
 		/>
@@ -55,20 +55,14 @@
 		/>
 		<Project
 			name="AOS"
-			description="AOS is JavaScript library to easily animate elements when scrolled to. I made it with JavaScript using the IntersectionObserver API, using animations from Animate.css"
+			description="Inspired by Michal Snik's library and made using modern JavaScript using the IntersectionObserver API, AOS is JavaScript library to easily animate elements when scrolled to."
 			codeUrl="https://github.com/codedbyjordan/aos"
 			previewUrl="https://github.com/codedbyjordan/aos"
 		/>
 		<Project
-			name="Svelte for React Devs"
-			description="Notes I'm taking as I learn Svelte, coming from React"
-			codeUrl="https://github.com/codedbyjordan/svelte-for-the-react-dev"
-			previewUrl="https://github.com/codedbyjordan/svelte-for-the-react-dev/blob/main/README.md"
-		/>
-		<Project
 			name="HW.tf"
-			description="A website made for a friend's Team Fortress server. Built entirely by me using
-                React with Gatsby.js"
+			description="A website made for a friend's Team Fortress 2 server. Built using
+                React with Gatsby.js, it also features a ban lookup sysem (queries a MySQL database)"
 			codeUrl="https://github.com/codedbyjordan/hwgaming.tf"
 			previewUrl="https://hwgaming.vercel.app"
 		/>
