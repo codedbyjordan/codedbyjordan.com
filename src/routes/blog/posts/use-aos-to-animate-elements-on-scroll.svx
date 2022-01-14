@@ -14,7 +14,9 @@ Well, first, you need to install the package. You can do this by either using th
 
 CDN
 
-`<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos"></script>`
+```
+<script src="https://cdn.jsdelivr.net/npm/@codedbyjordan/aos"></script>
+```
 
 NPM
 
