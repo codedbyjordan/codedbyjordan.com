@@ -3,6 +3,7 @@
 	import Nav from '$lib/components/layout/Nav.svelte';
 	import '../app.css';
 	import Footer from '$lib/components/layout/Footer.svelte';
+	import SocialMediaIcons from '$lib/components/SocialMediaIcons.svelte';
 </script>
 
 <Seo title="Jordan Baron | 18 year old web developer out of Virginia" />
@@ -20,17 +21,7 @@
 			<div class="pt-8">
 				<h1 class="font-bold text-3xl pb-2">hey, i'm jordan ☕️</h1>
 				<p class="">18 year-old web developer from Virginia</p>
-				<div class="text-xl pt-4">
-					<a href="https://twitter.com/codedbyjordan" class="px-2"
-						><i class="fab fa-twitter fa-2x transition duration-150 hover:text-gray-400" /></a
-					>
-					<a href="https://github.com/codedbyjordan" class="px-2"
-						><i class="fab fa-github fa-2x transition duration-150 hover:text-gray-400" /></a
-					>
-					<a href="https://linkedin.com/in/jordanmbaron" class="px-2"
-						><i class="fab fa-linkedin-in fa-2x transition duration-150 hover:text-gray-400" /></a
-					>
-				</div>
+				<SocialMediaIcons />
 			</div>
 		</div>
 		<slot />
