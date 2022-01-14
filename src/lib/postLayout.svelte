@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import hljs from 'highlight.js';
 	import SocialMediaIcons from './components/SocialMediaIcons.svelte';
+	import Seo from './components/Seo.svelte';
 
 	export let title;
 	export let subtitle;
@@ -15,6 +16,8 @@
 <svelte:head>
 	<link rel="stylesheet" href="/themes/github-dark.css" />
 </svelte:head>
+
+<Seo {title} />
 
 <div class="mt-12">
 	<p>{date}</p>
