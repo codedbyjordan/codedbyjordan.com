@@ -4,6 +4,8 @@ subtitle: Learn to use my own AOS library to animate elements when they become v
 date: 10/03/2021
 ---
 
+# {title}
+
 Today I will be teaching you how to animate elements when scrolled to using my own library, AOS. Not to be confused with AOS by Michael Snik. Although that library works, it is no longer being maintained and there are now better ways to go about making a library like this, such as using IntersectionObserver like I did.
 
 So, how do you use it?
@@ -16,15 +18,21 @@ CDN
 
 NPM
 
-`npm install @codedbyjordan/aos`
+```
+npm install @codedbyjordan/aos
+```
 
 Yarn
 
-`yarn add @codedbyjordan/aos`
+```
+yarn add @codedbyjordan/aos
+```
 
 Next we need to initialize AOS
 
-`aos.init();`
+```
+aos.init();
+```
 
 This function takes all the elements with the `data-aos-animate` attribute and calls `aosObserve`, which creates an IntersectionObserver for them. You can also call `aosObserve()` on its own.
 
