@@ -6,9 +6,8 @@
 	import SocialMediaIcons from '$lib/components/SocialMediaIcons.svelte';
 </script>
 
-<Seo title="Jordan Baron | 18 year old web developer out of Virginia" />
 <div class="font-poppins w-full min-h-screen flex justify-center bg-[#010101] text-white">
-	<div class="w-4/5 md:w-2/5 pt-12 md:pt-24 animate-fadeIn">
+	<div class="w-4/5 md:w-1/2 2xl:w-2/5 pt-12 md:pt-24 animate-fadeIn">
 		<div class="pb-6">
 			<div class="flex">
 				<img
