@@ -1,8 +1,6 @@
 <script>
-	import Seo from '$lib/components/Seo.svelte';
 	import Nav from '$lib/components/layout/Nav.svelte';
 	import '../app.css';
-	import Footer from '$lib/components/layout/Footer.svelte';
 	import SocialMediaIcons from '$lib/components/SocialMediaIcons.svelte';
 </script>
 
@@ -19,7 +17,7 @@
 			</div>
 			<div class="pt-8">
 				<h1 class="font-bold text-3xl pb-2">hey, i'm jordan ☕️</h1>
-				<p class="">18 year-old web developer from Virginia</p>
+				<p class="">a tenacious web developer from Virginia</p>
 				<SocialMediaIcons />
 			</div>
 		</div>

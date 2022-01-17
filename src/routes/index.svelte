@@ -5,7 +5,7 @@
 	import Seo from '$lib/components/Seo.svelte';
 </script>
 
-<Seo title="Jordan Baron | 18 year old web developer out of Virginia" />
+<Seo title="Jordan Baron | Fullstack web developer out of Virginia" />
 <div>
 	<Section title="about me" id="about">
 		<div class="bg-[#0D0D0D] py-4 px-6 my-4 rounded-xl shadow-md flex flex-col">
