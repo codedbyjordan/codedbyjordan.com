@@ -3,6 +3,7 @@
 	import Project from '$lib/components/Project.svelte';
 	import Section from '$lib/components/Section.svelte';
 	import Seo from '$lib/components/Seo.svelte';
+	import client from '$lib/sanityClient';
 </script>
 
 <Seo title="Jordan Baron | Fullstack web developer out of Virginia" />
@@ -25,48 +26,19 @@
 	</Section>
 
 	<Section title="projects" id="projects">
-		<Project
-			name="Camp"
-			description="Camp is a PDF reader built with Electron, Svelte, Tailwind, Vite, and TypeScript (although only with Svelte, not Electron)."
-			codeUrl="https://github.com/codedbyjordan/camp"
-			previewUrl="https://github.com/codedbyjordan/camp"
-		/>
-		<Project
-			name="Markdown Reference"
-			description="Forgot how to use Markdown? I do, more than I'd like to admit. That's why I made Markdown Reference, an extension for Raycast built using React, Raycast's own API, and data from MarkdownGuide's API."
-			codeUrl="https://github.com/codedbyjordan/camp"
-			previewUrl="https://github.com/codedbyjordan/camp"
-		/>
-		<Project
-			name="ctrl+v"
-			description="Similar to HasteBin, ctrl+v is a site to quickly and easily paste code snippets to share with anyone. Built with SvelteKit, MongoDB, and Tailwind"
-			codeUrl="https://github.com/codedbyjordan/ctrlv"
-			previewUrl="https://ctrlv-nine.vercel.app"
-		/>
-		<Project
-			name="File Uploader"
-			description="React and Firebase-based project built off of a tutorial by The Net Ninja"
-			codeUrl="https://github.com/codedbyjordan/file-uploader"
-			previewUrl="https://jmb.codes/file-uploader"
-		/>
-		<Project
-			name="ether.explore (read desc)"
-			description="A small Ethereum blockchain explorer made using SvelteKit and Tailwind NOTE: This project is hosted on Heroku, so it may take a bit to load."
-			codeUrl="https://github.com/codedbyjordan/ether-explore"
-			previewUrl="https://ether-explore.herokuapp.com/"
-		/>
-		<Project
-			name="AOS"
-			description="Inspired by Michal Snik's library and made using modern JavaScript using the IntersectionObserver API, AOS is JavaScript library to easily animate elements when scrolled to."
-			codeUrl="https://github.com/codedbyjordan/aos"
-			previewUrl="https://github.com/codedbyjordan/aos"
-		/>
-		<Project
-			name="HW.tf"
-			description="A website made for a friend's Team Fortress 2 server. Built using
-                React with Gatsby.js, it also features a ban lookup sysem (queries a MySQL database)"
-			codeUrl="https://github.com/codedbyjordan/hwgaming.tf"
-			previewUrl="https://hwgaming.vercel.app"
-		/>
+		{#await client.fetch('*[_type == "project"]')}
+			Loading projects...
+		{:then projects}
+			{#each projects as project}
+				<Project
+					name={project.name}
+					description={project.description}
+					codeUrl={project.code_url}
+					previewUrl={project.preview_url}
+				/>
+			{/each}
+		{:catch error}
+			Error fetching projects! Refresh to try again.
+		{/await}
 	</Section>
 </div>

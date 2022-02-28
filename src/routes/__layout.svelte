@@ -9,7 +9,7 @@
 		<div class="pb-6">
 			<div class="flex">
 				<img
-					src="https://www.notion.so/image/https%3A%2F%2Fi.ibb.co%2F2k96f11%2F1-E17-C5-D4-2-ECF-498-F-8240-8-F4776-B11-B78.png?table=block&id=ff91f478-c4ae-40ee-addc-fe7ab08d4d1f&spaceId=0e6ef2b7-1003-4b95-b051-8aeca7603c28&width=250&userId=d8703091-39cc-40bb-92af-37e4f9910d49&cache=v2"
+					src="https://pbs.twimg.com/profile_images/1497620422535401477/UxtxGpe4_400x400.jpg"
 					alt="Jordan Baron"
 					class="rounded-full border-4 md:border-[6px] border-white w-2/5 h-2/5 md:w-5/12"
 				/>
