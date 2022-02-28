@@ -9,7 +9,7 @@
 		<div class="pb-6">
 			<div class="flex">
 				<img
-					src="https://pbs.twimg.com/profile_images/1497620422535401477/UxtxGpe4_400x400.jpg"
+					src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46ee62f9-45fd-4760-a109-93929a7f436d/me_.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220228%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220228T230503Z&X-Amz-Expires=86400&X-Amz-Signature=887677452f867b694726f972f3bf417d7c500bca813b9fa007ac54a9d3b3d0a3&X-Amz-SignedHeaders=host&x-id=GetObject"
 					alt="Jordan Baron"
 					class="rounded-full border-4 md:border-[6px] border-white w-2/5 h-2/5 md:w-5/12"
 				/>
