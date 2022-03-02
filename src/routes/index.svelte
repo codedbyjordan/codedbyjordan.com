@@ -12,8 +12,15 @@
 		<div class="bg-[#0D0D0D] py-4 px-6 my-4 rounded-xl shadow-md flex flex-col">
 			<p class="text-sm md:text-lg">
 				I use numerous frameworks to develop fast, responsive, feature-rich web and mobile apps.
-				Below are some of my skills, feel free to check out my resume to see them all.
+				Below are some of my skills, feel free to check out <a
+					href="/resume.pdf"
+					download
+					class="font-bold underline"
+				>
+					my resume</a
+				> to see them all.
 			</p>
+
 			<div class="fa-2x pt-6">
 				<i class="fab fa-js-square px-2" />
 				<i class="fab fa-node-js px-2" />
