@@ -14,6 +14,10 @@
 		<li><a href="/" class="transition duration-150 hover:text-gray-400">home</a></li>
 		<li><a href="/#about" class="transition duration-150 hover:text-gray-400">about</a></li>
 		<li><a href="/#projects" class="transition duration-150 hover:text-gray-400">projects</a></li>
-		<li><a href="/blog" class="transition duration-150 hover:text-gray-400">blog</a></li>
+		<li>
+			<a href="https://blog.codedbyjordan.com" class="transition duration-150 hover:text-gray-400"
+				>blog</a
+			>
+		</li>
 	</ul>
 </nav>
