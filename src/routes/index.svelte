@@ -41,6 +41,7 @@
 					name={project.name}
 					description={project.description}
 					codeUrl={project.code_url}
+					image={project.image?.asset?._ref}
 					previewUrl={project.preview_url}
 				/>
 			{/each}

@@ -22,6 +22,11 @@ export default {
 			title: 'Preview URL',
 			name: 'preview_url',
 			type: 'url'
+		},
+		{
+			title: 'Preview Image',
+			name: 'image',
+			type: 'image'
 		}
 	]
 };
