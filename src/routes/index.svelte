@@ -32,7 +32,7 @@
 	</Section>
 
 	<Section title="projects" id="projects">
-		{#await client.fetch('*[_type == "project"]')}
+		{#await client.fetch('*[_type == "project"] | order(_createdAt desc)')}
 			Loading projects...
 		{:then projects}
 			{#each projects as project}
