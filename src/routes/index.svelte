@@ -6,7 +6,6 @@
 	import client from '$lib/sanityClient';
 </script>
 
-<Seo title="Jordan Baron | Fullstack web developer out of Virginia" />
 <div>
 	<Section title="about me" id="about">
 		<div class="bg-[#0D0D0D] py-4 px-6 my-4 rounded-xl shadow-md flex flex-col">
@@ -21,13 +20,13 @@
 				> to see them all.
 			</p>
 
-			<div class="fa-2x pt-6">
-				<i class="fab fa-js-square px-2" />
-				<i class="fab fa-node-js px-2" />
-				<i class="fab fa-html5 px-2" />
-				<i class="fab fa-css3-alt px-2" />
-				<i class="fab fa-react px-2" />
-				<i class="fas fa-terminal px-2" />
+			<div class="bx-lg pt-6">
+				<i class="bx bxl-javascript" />
+				<i class="bx bxl-nodejs" />
+				<i class="bx bxl-html5" />
+				<i class="bx bxl-css3" />
+				<i class="bx bxl-react" />
+				<i class="bx bx-terminal" />
 			</div>
 		</div>
 	</Section>
