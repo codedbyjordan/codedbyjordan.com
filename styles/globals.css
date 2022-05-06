@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../public/fonts/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../public/fonts/SF-Pro-Text-Medium.otf');
+  font-weight: 550;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../public/SF-Pro-Display-Semibold.otf');
+  font-weight: 600;
+}
