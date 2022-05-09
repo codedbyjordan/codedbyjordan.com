@@ -1,14 +1,14 @@
 import React from 'react'
 
 interface NavItemType {
-  link: string
+  href: string
   children: React.ReactNode
 }
 
-const NavItem: React.FC<NavItemType> = ({ link, children }) => {
+const NavItem: React.FC<NavItemType> = ({ href, children }) => {
   return (
-    <li className="pr-5">
-      <a href={link}>{children}</a>
+    <li className="text-xl pr-5 hover:underline">
+      <a href={href}>{children}</a>
     </li>
   )
 }
