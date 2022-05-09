@@ -4,17 +4,5 @@
 
 @font-face {
   font-family: 'SF Pro';
-  src: url('../public/fonts/SF-Pro-Text-Regular.otf');
-}
-
-@font-face {
-  font-family: 'SF Pro';
-  src: url('../public/fonts/SF-Pro-Text-Medium.otf');
-  font-weight: 550;
-}
-
-@font-face {
-  font-family: 'SF Pro';
-  src: url('../public/fonts/SF-Pro-Text-Semibold.otf');
-  font-weight: 600;
+  src: url('../public/fonts/SF-Pro.ttf');
 }

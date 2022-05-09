@@ -1,15 +1,19 @@
 import type { NextPage } from 'next'
-import Header from '../components/Header'
+import Header from '../lib/components/Header'
+import { ProjectList } from '../lib/components/Project'
+import { Timeline } from '../lib/components/Timeline'
 
 const Home: NextPage = () => {
   return (
-    <div className="w-full min-h-screen bg-[#080808] text-white flex justify-center">
-      <main className="md:w-1/3">
+    <div className="w-full min-h-screen bg-[#0C0C0C] font-sf-pro text-white flex justify-center ">
+      <main className="w-4/5 lg:w-1/3 ">
         <Header></Header>
         <p className="md:text-xl">
           I'm an 18 year-old web developer from Virginia using web technologies
           to build beautiful web apps
         </p>
+        <ProjectList></ProjectList>
+        <Timeline></Timeline>
       </main>
     </div>
   )
