@@ -7,7 +7,7 @@ interface NavItemType {
 
 const NavItem: React.FC<NavItemType> = ({ href, children }) => {
   return (
-    <li className="text-xl pr-5 hover:underline">
+    <li className="text-xl py-5 hover:underline">
       <a href={href}>{children}</a>
     </li>
   )
