@@ -4,8 +4,10 @@ import Year from './Year'
 
 const Timeline: React.FC = () => {
   return (
-    <div className="pt-24">
-      <h1 className="font-semibold text-4xl pb-2">Timeline</h1>
+    <div className="pt-24" id="timeline">
+      <h1 className="font-semibold text-4xl pb-2 font-baskerville italic">
+        Timeline
+      </h1>
       <p>A brief history of my coding journey</p>
       <div className="flex flex-col items-center ">
         <Year

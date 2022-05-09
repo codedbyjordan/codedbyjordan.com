@@ -5,13 +5,10 @@ import { Timeline } from '../lib/components/Timeline'
 
 const Home: NextPage = () => {
   return (
-    <div className="w-full min-h-screen bg-[#0C0C0C] font-sf-pro text-white flex justify-center ">
-      <main className="w-4/5 lg:w-1/3 ">
+    <div className="w-full min-h-screen bg-[#0C0C0C] font-inter text-white flex justify-center">
+      <main className="w-4/5 lg:w-1/3 h-full">
         <Header></Header>
-        <p className="md:text-xl">
-          I'm an 18 year-old web developer from Virginia using web technologies
-          to build beautiful web apps
-        </p>
+
         <ProjectList></ProjectList>
         <Timeline></Timeline>
       </main>

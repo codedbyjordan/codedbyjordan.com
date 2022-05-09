@@ -6,12 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sf-pro': [
-          'SF Pro',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'sans-serif',
-        ],
+        inter: ['Inter', 'sans-serif'],
+        baskerville: ['Libre Baskerville', 'serif'],
       },
       keyframes: {
         wave: {

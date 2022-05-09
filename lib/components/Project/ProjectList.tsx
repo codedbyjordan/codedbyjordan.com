@@ -7,8 +7,10 @@ const ProjectList: React.FC = () => {
   const { projects, isLoading } = useProjects()
 
   return (
-    <div className="pt-24">
-      <h1 className="font-semibold text-4xl pb-2">Projects</h1>
+    <div className="pt-24" id="projects">
+      <h1 className="font-semibold text-4xl pb-2 font-baskerville italic">
+        Projects
+      </h1>
       <p>A few things I've built</p>
       <div className="pt-4">
         {isLoading ? (
