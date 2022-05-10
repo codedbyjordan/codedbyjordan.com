@@ -20,7 +20,7 @@ const Timeline: React.FC = () => {
         ></Year>
         <Arrow></Arrow>
         <Year
-          year="2018-2019"
+          year="2018"
           events={[
             'Spent my days learning new skills',
             'Built numerous little projects using languages/tools such as Unity, GameMaker, HTML, CSS, PHP, and JavaScript',
@@ -28,8 +28,18 @@ const Timeline: React.FC = () => {
         ></Year>
         <Arrow></Arrow>
         <Year
+          year="2019"
+          events={[
+            'Took a cybersecurity class at my school',
+            'Worked closely with my teacher during and outside school to find my first real bug',
+          ]}
+        ></Year>
+        <Arrow></Arrow>
+        <Year
           year="2020"
           events={[
+            'Found XSS bugs in Ford and AT&T',
+            'Found a CSRF bug in NodeHost that can lead to account takeover'
             'Began learning React and its frameworks',
             'Built a website for my friend’s Team Fortress 2 server',
           ]}
