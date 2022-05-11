@@ -39,9 +39,9 @@ const Timeline: React.FC = () => {
           year="2020"
           events={[
             'Found XSS bugs in Ford and AT&T',
-            'Found a CSRF bug in NodeHost that can lead to account takeover'
+            'Found a CSRF bug in NodeHost that can lead to account takeover',
             'Began learning React and its frameworks',
-            'Built a website for my friend’s Team Fortress 2 server',
+            "Built a website for my friend's Team Fortress 2 server",
           ]}
         ></Year>
         <Arrow></Arrow>
