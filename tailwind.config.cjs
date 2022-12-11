@@ -8,7 +8,7 @@ module.exports = {
 				openSans: ["Open Sans", "sans-serif"]
 			},
 			colors: {
-				midnight: "#0f0f0f",
+				midnight: "#121212",
 				apple: {
 					green: "#61BB46",
 					yellow: "#FDB827",
