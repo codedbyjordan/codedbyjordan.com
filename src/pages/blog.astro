@@ -7,12 +7,12 @@ const posts = await Astro.glob("../pages/posts/*.md");
   title="All posts"
   metaDescription="Jordan Baron's blog where he writes about numerous different topics, including programming and vintage computing."
 >
-  <h2 class="text-left text-2xl md:text-4xl font-bold">All posts</h2>
+  <h2 class="text-left text-2xl md:text-3xl font-bold">All posts</h2>
   <div class="flex flex-col gap-4">
     {
       posts.map((post) => (
         <article class="text-left md:mt-6">
-          <h1 class="font-bold text-xl md:text-3xl underline my-3">
+          <h1 class="font-bold text-xl md:text-2xl underline my-3">
             <a href={post.url}>{post.frontmatter.title}</a>
           </h1>
           <p class="md:text-xl text-gray-400">{post.frontmatter.description}</p>
