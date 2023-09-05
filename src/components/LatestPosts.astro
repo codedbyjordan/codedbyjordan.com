@@ -1,0 +1,17 @@
+---
+import RecentPostCard from "./RecentPostCard.astro";
+
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const recentPosts = allPosts.slice(0, 1)
+---
+
+<div>
+  <span class="font-bold uppercase text-gray-400 text-xl">Latest Posts</span>
+  <div>
+    {recentPosts.map(post => {
+      const { title, description, date } = post.frontmatter;
+      const { url } = post
+      return <RecentPostCard {title} {description} {date} url={url!} />
+    })}
+  </div>
+</div>

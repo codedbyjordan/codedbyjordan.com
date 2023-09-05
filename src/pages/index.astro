@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import meImg from "../assets/me.jpg";
 import squiggleImg from "../assets/squiggle.svg";
+import LatestPosts from '../components/LatestPosts.astro';
 ---
 
 <Layout>
@@ -19,9 +20,12 @@ import squiggleImg from "../assets/squiggle.svg";
       <Image src={meImg} alt="Jordan Baron" class="rounded-2xl w-3/4" />
       <Image src={squiggleImg} alt="Squiggle" class="absolute -bottom-5 left-4 lg:-bottom-6 lg:-left-6 w-8" />
     </div>
-    <div class="lg:w-1/2 flex flex-col gap-4 mt-12 lg:mt-0">
-      <h2 class="text-2xl lg:text-5xl font-bold">Hello!</h2>
-      <p class="text-sm lg:text-lg">I'm Jordan. I'm a software engineer who loves building dope stuff. I currently work full time on SSI at <a href="https://heirloom.io" class="underline font-bold" target="_blank">Heirloom</a>, but I also do contract work at a couple other places.  Check me out on <a href="http://twitter.com/codedbyjordan" class="underline font-bold" target="_blank">Twitter</a> (X is a dumb name). I like to think I'm pretty funny on there.</p>
+    <div class="lg:w-1/2 flex flex-col justify-between gap-24 mt-12 lg:mt-0">
+      <div class="flex flex-col gap-4">
+        <h2 class="text-2xl lg:text-5xl font-bold">Hello!</h2>
+        <p class="text-sm lg:text-lg">I'm Jordan. I'm a software engineer who loves building dope stuff. I currently work full time on SSI at <a href="https://heirloom.io" class="underline font-bold" target="_blank">Heirloom</a>, but I also do contract work at a couple other places.  Check me out on <a href="http://twitter.com/codedbyjordan" class="underline font-bold" target="_blank">Twitter</a> (X is a dumb name). I like to think I'm pretty funny on there.</p>
+      </div>
+      <LatestPosts />
     </div>
 	</main>
 </Layout>
