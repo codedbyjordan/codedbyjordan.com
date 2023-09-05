@@ -1,16 +1,19 @@
 ---
 
+import { twMerge } from 'tailwind-merge'
+
 interface Props {
   animate?: boolean;
+  class?: string;
 }
 
-const { animate = true } = Astro.props;
+const { animate = true, class: className } = Astro.props;
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
-<ul class="flex gap-4 justify-center mt-6 [&>*]:text-lg uppercase font-medium [&>*:hover]:text-gray-400 [&>*]:transition-colors h-max overflow-y-hidden">
+<ul class={twMerge("flex gap-4 justify-center mt-6 [&>*]:text-lg uppercase font-medium [&>*:hover]:text-gray-400 [&>*]:transition-colors h-max overflow-y-hidden", className)}>
   <li class={ animate ? ' translate-y-full animate-[slide-up_.75s_forwards]' : '' }><a href="/">Home</a></li>
   <li class={ animate ? ' translate-y-full animate-[slide-up_.75s_100ms_forwards]' : '' }><a href="/about">About</a></li>
   <li class={ animate ? ' translate-y-full animate-[slide-up_.75s_200ms_forwards]' : '' }><a href="/blog">Blog</a></li>

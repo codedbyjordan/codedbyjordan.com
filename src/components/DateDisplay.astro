@@ -1,0 +1,15 @@
+---
+import Icon from 'astro-icon';
+
+
+interface Props {
+  date: string;
+}
+
+const { date } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString();
+---
+
+<span class="text-gray-300 flex items-center gap-2" transition:name="post-date"><Icon name="mdi:calendar-today" class="w-4" />{formattedDate}</span>
+
