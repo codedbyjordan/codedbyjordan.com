@@ -19,9 +19,9 @@ const { title, description, imgSrc, date } = frontmatter
     </div>
     <hr class="border-gray-500">
     <DateDisplay {date} />
-    <img src={imgSrc} alt="Blog" class="rounded-2xl w-full h-96 object-cover">
+    {imgSrc && <img src={imgSrc} alt="Blog" class="rounded-2xl w-full h-48 lg:h-96 object-cover">}
   </div>
-  <div class="md:text-lg text-left mt-12" id="postWrapper">
+  <div class="md:text-lg text-left mt-6 lg:mt-12" id="postWrapper">
     <slot />
   </div>
 </PageLayout>
