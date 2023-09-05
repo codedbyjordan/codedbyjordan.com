@@ -1,0 +1,19 @@
+---
+interface Props {
+	title: string;
+	description: string;
+  imgSrc: string;
+  url: string;
+}
+
+const { title, description, imgSrc, url } = Astro.props
+
+---
+
+<a href={url} class="w-full grid gap-4 group rounded-2xl p-2 overflow-hidden">
+  <img src={imgSrc} alt="Blog" class='rounded-2xl col-span-2 h-72 object-cover' transition:name="postImage" />
+  <div class="text-left flex flex-col gap-2">
+    <h3 class="font-bold text-3xl group-hover:underline">{title}</h3>
+    <span class="text-gray-400">{description}</span>
+  </div>
+</a>

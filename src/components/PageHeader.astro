@@ -1,0 +1,11 @@
+---
+import NavLinks from "./NavLinks.astro";
+---
+
+<div class="flex flex-col lg:flex-row items-center justify-between w-full" transition:name="nav">
+  <div class="flex flex-col text-center lg:text-left gap-2">
+    <h1 class="text-4xl font-black">Jordan Baron</h1>
+    <span class="text-sm uppercase text-gray-400 font-semibold">Writer of code, lover of monkeys and frogs</span>
+  </div>
+  <NavLinks animate={false} />
+</div>

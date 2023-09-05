@@ -1,0 +1,89 @@
+---
+import PageLayout from "./PageLayout.astro";
+import { Icon } from 'astro-icon'
+
+const {frontmatter} = Astro.props;
+const { title, description, imgSrc, date } = frontmatter
+
+const formattedDate = new Date(date).toLocaleDateString();
+---
+
+<PageLayout title={title}>
+    <div class="lg:w-3/4 mx-auto mb-12">
+      <div class="flex flex-col gap-6">
+        <div class="mt-12 text-left flex flex-col gap-4">
+          <div class="relative">
+            <a href="/blog" class="hover:text-gray-400"><Icon name="mdi:arrow-back" class="w-12 absolute -left-16 transition-colors" /></a>
+            <h1 class="text-2xl md:text-4xl font-bold">{title}</h1>
+          </div>
+          <span class="text-gray-300">{description}</span>
+        </div>
+        <hr class="border-gray-500">
+        <span class="text-gray-300 flex items-center gap-2"><Icon name="mdi:calendar-today" class="w-4" />{formattedDate}</span>
+        <img src={imgSrc} alt="Blog" class="rounded-2xl w-full h-96 object-cover" transition:name="postImage">
+      </div>
+      <div class="md:text-lg text-left mt-12" id="postWrapper">
+        <slot />
+      </div>
+    </div>
+</PageLayout>
+
+<style>
+  #postWrapper > :global(h2) {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #postWrapper > :global(ul), #postWrapper > :global(blockquote > ul) {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 12px 0;
+  }
+
+  #postWrapper > :global(ul > li) {
+    margin: 8px 0;
+  }
+
+  #postWrapper > :global(pre) {
+    padding: 8px;
+    border-radius: 8px;
+    margin: 24px 0;
+  }
+
+  #postWrapper > :global(p > img) {
+    margin: 32px auto;
+  }
+
+  #postWrapper > :global(ul > li > code) {
+    padding: 4px;
+    background-color: #1d1d1d;
+  }
+
+  #postWrapper > :global(blockquote) {
+    font-style: italic;
+    margin: 16px 0;
+    margin-left: 16px;
+    padding-left: 32px;
+    border-left: 1px solid white;
+    position: relative;
+    width: max-content;
+  }
+
+  #postWrapper > :global(blockquote::before) {
+    content: open-quote;
+    position: absolute;
+    font-size: 2.5rem;
+    left: 8px;
+    top: 0px;
+  }
+
+  #postWrapper > :global(blockquote::after) {
+    content: close-quote;
+    position: absolute;
+    font-size: 2.5rem;
+    right: -18px;
+    bottom: 12px;
+  }
+</style>

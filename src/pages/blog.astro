@@ -1,0 +1,17 @@
+---
+import PostCard from '../components/PostCard.astro';
+import PageLayout from '../layouts/PageLayout.astro';
+
+const posts = await Astro.glob('./posts/*.md');
+---
+
+<PageLayout title="All posts">
+  <div class="grid grid-cols-3">
+    {posts.map(post => {
+      const { title, description, imgSrc } = post.frontmatter;
+      const { url } = post
+      return <PostCard {title} {description} {imgSrc} url={url!} />
+    })}
+  </div>
+</PageLayout>
+
