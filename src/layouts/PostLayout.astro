@@ -10,9 +10,9 @@ const { title, description, imgSrc, date } = frontmatter
 
 <PageLayout title={title}>
   <div class="flex flex-col gap-6">
-    <div class="mt-12 text-left flex flex-col gap-4">
+    <div class="lg:mt-12 text-left flex flex-col gap-4">
       <div class="relative">
-        <a href="/blog" class="hover:text-gray-400"><Icon name="mdi:arrow-back" class="w-12 absolute -left-16 transition-colors" /></a>
+        <a href="/blog" class="hover:text-gray-400 mb-6 lg:mb-0 lg:absolute -left-16 flex items-center gap-2"><Icon name="mdi:arrow-back" class="w-6 lg:w-12 transition-colors" /><span class="block lg:hidden">Back</span></a>
         <h1 class="text-2xl md:text-4xl font-bold" transition:name="post-title">{title}</h1>
       </div>
       <span class="text-gray-300" transition:name="post-description">{description}</span>
