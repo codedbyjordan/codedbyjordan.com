@@ -7,21 +7,21 @@ import squiggleImg from "../assets/squiggle.svg";
 ---
 
 <Layout>
-	<main class="w-full h-screen flex items-center justify-center">
-    <div class="w-1/2 flex flex-col gap-8 relative">
+	<main class="w-full h-screen flex flex-col lg:flex-row items-center justify-center">
+    <div class="lg:w-1/2 flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left gap-8 relative">
       <div transition:name="nav">
         <div class="flex flex-col gap-2">
-          <h1 class="text-6xl font-black">Jordan Baron</h1>
-          <span class="uppercase text-gray-400 font-semibold">Writer of code, lover of monkeys and frogs</span>
+          <h1 class="text-4xl lg:text-6xl font-black">Jordan Baron</h1>
+          <span class="text-sm lg:text-base uppercase text-gray-400 font-semibold">Writer of code, lover of monkeys and frogs</span>
         </div>
-        <NavLinks class='justify-start' />
+        <NavLinks class='lg:justify-start' />
       </div>
       <Image src={meImg} alt="Jordan Baron" class="rounded-2xl w-3/4" />
-      <Image src={squiggleImg} alt="Squiggle" class="absolute -bottom-8 -left-8" />
+      <Image src={squiggleImg} alt="Squiggle" class="absolute -bottom-5 left-4 lg:-bottom-6 lg:-left-6 w-8" />
     </div>
-    <div class="w-1/2 flex flex-col gap-4">
-      <h2 class="text-5xl font-bold">Hello!</h2>
-      <p class="text-lg">I'm Jordan. I'm a software engineer who loves building dope stuff. I currently work full time on SSI at <a href="https://heirloom.io" class="underline font-medium">Heirloom</a>, but I also do contract work at a couple other places.  Check me out on <a href="http://twitter.com/codedbyjordan" class="underline font-medium">Twitter (X is a dumb name)</a>. I like to think I'm pretty funny on there.</p>
+    <div class="lg:w-1/2 flex flex-col gap-4 mt-12 lg:mt-0">
+      <h2 class="text-2xl lg:text-5xl font-bold">Hello!</h2>
+      <p class="text-sm lg:text-lg">I'm Jordan. I'm a software engineer who loves building dope stuff. I currently work full time on SSI at <a href="https://heirloom.io" class="underline font-medium">Heirloom</a>, but I also do contract work at a couple other places.  Check me out on <a href="http://twitter.com/codedbyjordan" class="underline font-medium">Twitter (X is a dumb name)</a>. I like to think I'm pretty funny on there.</p>
     </div>
 	</main>
 </Layout>
