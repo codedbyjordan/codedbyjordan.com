@@ -1,19 +1,21 @@
 ---
+import DateDisplay from './DateDisplay.astro';
+
 interface Props {
 	title: string;
 	description: string;
-  imgSrc: string;
   url: string;
+  date: string;
 }
 
-const { title, description, imgSrc, url } = Astro.props
+const { title, description, url, date } = Astro.props
 
 ---
 
 <a href={url} class="w-full grid gap-4 group rounded-2xl p-2 overflow-hidden">
-  <img src={imgSrc} alt="Blog" class='rounded-2xl col-span-2 h-72 object-cover' transition:name="postImage" />
   <div class="text-left flex flex-col gap-2">
-    <h3 class="font-bold text-3xl group-hover:underline">{title}</h3>
-    <span class="text-gray-400">{description}</span>
+    <h3 class="font-bold text-3xl w-max border-b group-hover:border-b-2 pb-1" transition:name="post-title">{title}</h3>
+    <span class="text-gray-400" transition:name="post-description">{description}</span>
+    <DateDisplay {date}>
   </div>
 </a>

@@ -6,11 +6,11 @@ const posts = await Astro.glob('./posts/*.md');
 ---
 
 <PageLayout title="All posts">
-  <div class="grid grid-cols-3">
+  <div class="flex flex-col gap-4 mx-auto">
     {posts.map(post => {
-      const { title, description, imgSrc } = post.frontmatter;
+      const { title, description, date } = post.frontmatter;
       const { url } = post
-      return <PostCard {title} {description} {imgSrc} url={url!} />
+      return <PostCard {title} {description} {date} url={url!} />
     })}
   </div>
 </PageLayout>
