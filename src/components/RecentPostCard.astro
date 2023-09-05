@@ -12,7 +12,7 @@ const { title, description, url, date } = Astro.props
 
 ---
 
-<a href={url} class="max-w-full gap-4 group rounded-2xl p-2 break-words">
+<a href={url} class="max-w-full gap-4 group rounded-2xl break-words">
   <div class="text-left flex flex-col gap-2">
     <h3 class="font-bold text-lg lg:text-xl max-w-max border-b group-hover:border-b-2 pb-1 break-words" transition:name="post-title">{title}</h3>
     <span class="text-gray-400 text-sm lg:text-base" transition:name="post-description">{description}</span>
