@@ -10,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <Layout {title}>
-  <main class="w-full h-screen flex flex-col items-center mt-16">
+  <main class="w-full min-h-screen flex flex-col items-center mt-16">
     <PageHeader />
     <div class="w-full mt-16 lg:w-3/4 mx-auto mb-12" transition:animate="none">
       <slot />
