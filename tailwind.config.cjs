@@ -21,6 +21,10 @@ module.exports = {
       animation: {
         "slide-up": "slide-up 0.6s ease-in-out",
       },
+      screens: {
+        "3xl": "1920px",
+        "4xl": "2560px",
+      },
     },
   },
   plugins: [],
