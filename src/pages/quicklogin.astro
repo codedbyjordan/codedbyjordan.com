@@ -3,23 +3,6 @@ import Layout from "../layouts/Layout.astro";
 
 ---
 
-<script>
-  const quickLoginIframe = document.getElementById('quicklogin-iframe')! as HTMLIFrameElement;
-window.addEventListener('message', (event) => {
-  const quickLoginIframeOrigin = quickLoginIframe.src.split('/quicklogin')[0];
-  console.log(quickLoginIframeOrigin)
-  console.log(event.origin)
-  if (event.origin !== quickLoginIframeOrigin || !quickLoginIframe) return;
-  console.log(event.data)
-  if (event.data.type === 'quicklogin-challenge-generated') {
-    quickLoginIframe.style.height = '358px';
-  } else if (event.data.type === 'quicklogin-websocket-response') {
-    quickLoginIframe.style.height = '48px';
-    alert("congrats, you're dope. welcome to the club.")
-  }
-});
-</script>
-
 <Layout>
   <div class="w-full h-screen flex items-center justify-center">
     <div class="w-96 px-12 py-8 bg-white rounded-lg flex flex-col items-center justify-center">
@@ -32,4 +15,22 @@ window.addEventListener('message', (event) => {
       ></iframe>
     </div>
   </div>
+
+  <script>
+    console.log("loaded")
+    const quickLoginIframe = document.getElementById('quicklogin-iframe')! as HTMLIFrameElement;
+    window.addEventListener('message', (event) => {
+      const quickLoginIframeOrigin = quickLoginIframe.src.split('/quicklogin')[0];
+      console.log(quickLoginIframeOrigin)
+      console.log(event.origin)
+      if (event.origin !== quickLoginIframeOrigin || !quickLoginIframe) return;
+      console.log(event.data)
+      if (event.data.type === 'quicklogin-challenge-generated') {
+        quickLoginIframe.style.height = '358px';
+      } else if (event.data.type === 'quicklogin-websocket-response') {
+        quickLoginIframe.style.height = '48px';
+        alert("congrats, you're dope. welcome to the club.")
+      }
+    });
+  </script>
 </Layout>
