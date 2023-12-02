@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<script>
+  const quickLoginIframe = document.getElementById('quicklogin-iframe')! as HTMLIFrameElement;
+window.addEventListener('message', (event) => {
+  const quickLoginIframeOrigin = quickLoginIframe.src.split('/quicklogin')[0];
+  
+  if (event.origin !== quickLoginIframeOrigin || !quickLoginIframe) return;
+  if (event.data.type === 'quicklogin-challenge-generated') {
+    quickLoginIframe.style.height = '358px';
+  } else if (event.data.type === 'quicklogin-websocket-response') {
+    quickLoginIframe.style.height = '48px';
+    alert("congrats, you're dope. welcome to the club.")
+  }
+});
+</script>
+
+<Layout>
+  <div class="w-full h-screen flex items-center justify-center">
+    <div class="w-96 px-12 py-8 bg-white rounded-lg flex flex-col items-center justify-center">
+      <h1 class="text-black text-3xl font-bold text-center pb-4">welcome. only dope folks allowed!</h1>
+      <iframe
+        src="https://creator.release.heirloom.io/quicklogin?apiKey=8jYysg1TAAwR8ALWHAdgyJzra4ThjscwBWrjwEgrTLM4"
+        width="255px"
+        height="48px"
+        id="quicklogin-iframe"
+      ></iframe>
+    </div>
+  </div>
+</Layout>
