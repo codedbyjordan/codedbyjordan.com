@@ -9,6 +9,7 @@ window.addEventListener('message', (event) => {
   const quickLoginIframeOrigin = quickLoginIframe.src.split('/quicklogin')[0];
   
   if (event.origin !== quickLoginIframeOrigin || !quickLoginIframe) return;
+  console.log(event.data)
   if (event.data.type === 'quicklogin-challenge-generated') {
     quickLoginIframe.style.height = '358px';
   } else if (event.data.type === 'quicklogin-websocket-response') {
