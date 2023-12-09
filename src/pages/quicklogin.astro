@@ -11,11 +11,11 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/gh/heirloom-io/quicklogin-js@0.1.0/dist/quicklogin-staging.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/heirloom-io/quicklogin-js@0.1.1/dist/quicklogin-staging.js"></script>
   <script>
     /* @ts-ignore */
-    createQuickLogin({
-      apiKey: "7rLvHb7cYeXGs9SNSDQHxW4FiqCrUGVeso1doGdj6uUA",
+    QuickLogin.createQuickLogin({
+      apiKey: "CcavSJ77i3r1LuVhvajcra9uz6E6jteoRjnk2LpTLee1",
       onQuickLoginSuccess: (authToken: string) => console.log(authToken)
     })
   </script>
