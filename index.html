@@ -54,6 +54,9 @@
 
         <script src="https://cdn.jsdelivr.net/gh/heirloom-io/quicklogin-js@0.1.1/dist/quicklogin-staging.js"></script>
         <script>
+            window.addEventListener("message", (event) => {
+                console.log(evnet.origin);
+            });
             QuickLogin.createQuickLogin({
                 apiKey: "CNBPpHpXAFoaKQ8zMScqavhEpBbiA315JVq9nyYxUVz7",
                 onQuickLoginSuccess: (authToken) => console.log(authToken),
