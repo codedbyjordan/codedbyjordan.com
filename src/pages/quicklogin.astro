@@ -7,27 +7,16 @@ import Layout from "../layouts/Layout.astro";
   <div class="w-full h-screen flex items-center justify-center">
     <div class="w-96 px-12 py-8 bg-white rounded-lg flex flex-col items-center justify-center">
       <h1 class="text-black text-3xl font-bold text-center pb-4">welcome. only dope folks allowed!</h1>
-      <iframe
-        src="https://creator.release.heirloom.io/quicklogin?apiKey=8jYysg1TAAwR8ALWHAdgyJzra4ThjscwBWrjwEgrTLM4"
-        width="255px"
-        height="48px"
-        id="quicklogin-iframe"
-      ></iframe>
+      <div data-quicklogin></div>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/gh/heirloom-io/quicklogin-js@0.1.0/dist/quicklogin-staging.js"></script>
   <script>
-    const quickLoginIframe = document.getElementById('quicklogin-iframe')! as HTMLIFrameElement;
-    window.addEventListener('message', (event) => {
-      const quickLoginIframeOrigin = quickLoginIframe.src.split('/quicklogin')[0];
-
-      if (event.origin !== quickLoginIframeOrigin || !quickLoginIframe) return;
-
-      if (event.data.type === 'quicklogin-challenge-generated') {
-        quickLoginIframe.style.height = '358px';
-      } else if (event.data.type === 'quicklogin-websocket-response') {
-        alert("congrats, you're dope. welcome to the club.")
-      }
-    });
+    /* @ts-ignore */
+    createQuickLogin({
+      apiKey: "7rLvHb7cYeXGs9SNSDQHxW4FiqCrUGVeso1doGdj6uUA",
+      onQuickLoginSuccess: (authToken: string) => console.log(authToken)
+    })
   </script>
 </Layout>
