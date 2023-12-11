@@ -52,13 +52,48 @@
             </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/gh/heirloom-io/quicklogin-js@0.1.1/dist/quicklogin-staging.js"></script>
+        <script>
+            var QuickLogin = (function (e) {
+                "use strict";
+                return (
+                    (e.createQuickLogin = function ({
+                        apiKey: e,
+                        onQuickLoginSuccess: i,
+                    }) {
+                        const t = "https://mean-owl-76.telebit.io/",
+                            n = document.querySelector("[data-quicklogin]");
+                        if (!n || !e)
+                            throw new Error(
+                                "QuickLogin SDK: iFrame target and/or apiKey not found"
+                            );
+                        const o = document.createElement("iframe");
+                        (o.src = `${t}/quickLogin?apiKey=${e}`),
+                            (o.id = "quicklogin-iframe"),
+                            (o.style.border = "none"),
+                            (o.style.width = "255px"),
+                            (o.style.height = "48px"),
+                            n.appendChild(o),
+                            window.addEventListener("message", (e) => {
+                                if (e.origin === t)
+                                    switch (e.data.type) {
+                                        case "quicklogin-challenge-generated":
+                                            o.style.height = "358px";
+                                            break;
+                                        case "quicklogin-websocket-response":
+                                            i(e.data.message);
+                                    }
+                            });
+                    }),
+                    e
+                );
+            })({});
+        </script>
         <script>
             window.addEventListener("message", (event) => {
                 console.log(event.origin);
             });
             QuickLogin.createQuickLogin({
-                apiKey: "DHT2Tijod4c8xJkHH8wJpAGmigqST56TrqgmBZ27CMDA",
+                apiKey: "B9L726mXhAY2DZncDRDCZzQ5EALw9b5JJsMWt3k4G9Ag",
                 onQuickLoginSuccess: (authToken) => console.log(authToken),
             });
         </script>
