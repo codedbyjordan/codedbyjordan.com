@@ -1,5 +1,21 @@
 import type { APIRoute } from "astro";
 
+type OfflineResponse = {
+  isOnline: false;
+  name?: undefined;
+  artist?: undefined;
+  albumArt?: undefined;
+};
+
+type OnlineResponse = {
+  isOnline: true;
+  name: string;
+  artist: string;
+  albumArt: string;
+};
+
+type NowPlayingResponse = OfflineResponse | OnlineResponse;
+
 const clientId = import.meta.env.SPOTIFY_CLIENT_ID;
 const clientSecret = import.meta.env.SPOTIFY_CLIENT_SECRET;
 const refreshToken = import.meta.env.SPOTIFY_REFRESH_TOKEN;
@@ -22,7 +38,7 @@ const getAccessToken = async (): Promise<string> => {
   return accessToken;
 };
 
-const getNowPlaying = async () => {
+const getNowPlaying = async (): Promise<NowPlayingResponse | null> => {
   const accessToken = await getAccessToken();
 
   const res = await fetch(NOW_PLAYING_ENDPOINT, {
@@ -30,13 +46,19 @@ const getNowPlaying = async () => {
       Authorization: `Bearer ${accessToken}`,
     },
   });
-  const json = await res.json();
+
+  if (res.status === 204) {
+    return {
+      isOnline: false,
+    };
+  }
+
   const {
     item: { name, artists, album },
-  } = json;
-  console.log(json);
+  } = await res.json();
 
   const nowPlaying = {
+    isOnline: true,
     name,
     artist: artists[0].name,
     albumArt: album.images[0].url,
