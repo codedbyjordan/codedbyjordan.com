@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import TechStack from "../components/TechStack.astro";
 import Accomplishments from "../components/Accomplishments.astro";
+import SpotifyWidget from "../components/SpotifyWidget.astro";
 ---
 
 <Layout title="Home">
@@ -26,13 +27,14 @@ import Accomplishments from "../components/Accomplishments.astro";
     </ul>
   </div>
 
+  <SpotifyWidget />
   <TechStack />
   <Accomplishments />
 
   <div class="flex flex-col gap-4">
     <span class="flex gap-2 text-sm"
       >here's a picture of me with my cat lacy. we have the same smile <span
-        class="rotate-[60deg] flex w-max h-max">:)</span
+        class="rotate-[60deg] flex w-max h-max">:&rpar;</span
       ></span
     >
 
