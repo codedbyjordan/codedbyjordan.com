@@ -5,6 +5,11 @@ import AnimatedSoundbars from "../components/AnimatedSoundbars.astro";
 const nowPlayingResponse = await fetch(
   import.meta.env.PUBLIC_API_URL + "/api/spotify/now-playing",
 );
+
+if (!nowPlayingResponse.ok) {
+  throw new Error("Failed to fetch now playing data");
+}
+
 const nowPlaying = await nowPlayingResponse.json();
 const { isOnline } = nowPlaying;
 ---
