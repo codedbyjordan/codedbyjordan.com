@@ -1,0 +1,37 @@
+---
+import Navbar from "../components/Navbar.astro";
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>codedbyjordan - {title}</title>
+  </head>
+  <body>
+    <body class="w-full min-h-screen bg-[#121212] text-white">
+      <div
+        class="w-full px-6 lg:px-0 lg:w-1/3 h-full font-jetbrains-mono mx-auto py-6"
+      >
+        <Navbar />
+        <div class="pt-12 flex flex-col gap-12"><slot /></div>
+      </div>
+    </body>
+  </body>
+</html>

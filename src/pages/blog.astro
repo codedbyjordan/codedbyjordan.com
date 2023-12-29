@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const allPosts = await Astro.glob("../pages/post/*.md");
+const recentPosts = allPosts.slice(0, 1);
+---
+
+<Layout title="Blog">
+  {
+    recentPosts.map((recentPost) => {
+      const { title, description, date } = recentPost.frontmatter;
+      const { url } = recentPost;
+
+      return (
+        <div class="flex flex-col gap-1 max-w-full overflow-hidden">
+          <a href={url} class="text-lg lg:text-xl">
+            {title}
+          </a>
+          <span class="text-gray-500 text-sm lg:text-base">{date}</span>
+          <a
+            href={url}
+            class="border-b w-max block mt-4 line-clamp-1 text-sm lg:text-base"
+          >
+            {description}
+          </a>
+        </div>
+      );
+    })
+  }
+</Layout>

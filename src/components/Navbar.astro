@@ -1,0 +1,24 @@
+---
+const pathname = Astro.url.pathname;
+const formattedPathname = pathname.split("/")[1];
+---
+
+<div
+  class="flex justify-between items-center text-white flex-col lg:flex-row gap-2 lg:gap-0"
+>
+  <div class="text-xl">
+    <span class="font-medium">codedbyjordan</span>
+    {
+      pathname !== "/" && (
+        <span class="text-gray-400">/ {formattedPathname}</span>
+      )
+    }
+  </div>
+  <ul
+    class="flex items-center gap-6 hover:*:border-b-2 *:hover:border-green-800"
+  >
+    <li><a href="/">home</a></li>
+    <li><a href="/blog">blog</a></li>
+  </ul>
+</div>
+<hr class="border-neutral-700 w-full mt-4" />

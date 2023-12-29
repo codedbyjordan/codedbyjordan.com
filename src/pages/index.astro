@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import TechStack from "../components/TechStack.astro";
+import Accomplishments from "../components/Accomplishments.astro";
+---
+
+<Layout title="Home">
+  <div class="flex flex-col gap-4">
+    <h1 class="text-3xl font-medium">welcome!</h1>
+    <p class="text-sm lg:text-base">my name is Jordan Baron. I am a</p>
+    <ul
+      class="list-inside list-disc flex flex-col gap-1 ml-2 text-sm lg:text-base"
+    >
+      <li>self-taught programmer</li>
+      <li>software engineer @ heirloom</li>
+      <li>aspiring to be...many things</li>
+    </ul>
+  </div>
+
+  <TechStack />
+  <Accomplishments />
+
+  <div class="flex flex-col gap-4">
+    <span class="flex gap-2 text-sm"
+      >here's a picture of me with my cat lacy. we have the same smile <span
+        class="rotate-[60deg] flex w-max h-max">:)</span
+      ></span
+    >
+
+    <Image src="/ME.jpg" alt="Jordan and Lacy" width="256" height="256" />
+  </div>
+</Layout>
