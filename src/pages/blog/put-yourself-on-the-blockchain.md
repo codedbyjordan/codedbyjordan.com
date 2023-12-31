@@ -2,7 +2,6 @@
 layout: "../../layouts/PostLayout.astro"
 title: "Put Yourself on the Blockchain: Creating an NFT on Solana"
 description: "Use Metaplex Candy Machine to create a Solana NFT"
-slug: "/put-yourself-on-the-blockchain"
 tags: "blockchain"
 date: 05-02-2022
 ---

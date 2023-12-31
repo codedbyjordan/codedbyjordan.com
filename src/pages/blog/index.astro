@@ -1,7 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 
-const allPosts = await Astro.glob("../pages/post/*.md");
+const allPosts = await Astro.glob("./*.md");
 const recentPosts = allPosts.slice(0, 1);
 ---
 
