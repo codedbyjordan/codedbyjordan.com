@@ -8,9 +8,9 @@ export default defineConfig({
   integrations: [tailwind()],
   markdown: {
     shikiConfig: {
-      theme: "monokai"
-    }
+      theme: "monokai",
+    },
   },
-  output: "server",
-  adapter: vercel()
+  output: "hybrid",
+  adapter: vercel(),
 });
