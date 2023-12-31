@@ -2,14 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 
 const allPosts = await Astro.glob("../pages/post/*.md");
-const recentPosts = allPosts.slice(0, 1);
+const finishedPosts = allPosts.filter((post) => !post.frontmatter.draft);
 ---
 
 <Layout title="Blog">
   {
-    recentPosts.map((recentPost) => {
-      const { title, description, date } = recentPost.frontmatter;
-      const { url } = recentPost;
+    finishedPosts.map((post) => {
+      const { title, description, date } = post.frontmatter;
+      const { url } = post;
 
       return (
         <div class="flex flex-col gap-1 max-w-full overflow-hidden">
