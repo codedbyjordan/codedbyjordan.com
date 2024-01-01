@@ -1,8 +1,9 @@
 ---
+import { formatTags } from "../utils/formatTags";
 import Layout from "./Layout.astro";
 
 const { frontmatter } = Astro.props;
-const { title, description } = frontmatter;
+const { title, description, tags, date } = frontmatter;
 ---
 
 <Layout title="blog">
@@ -16,6 +17,9 @@ const { title, description } = frontmatter;
       <span class="text-gray-300" transition:name="post-description"
         >{description}</span
       >
+      <span class="text-sm text-neutral-500">
+        date: {date} | tags: {formatTags(tags)}
+      </span>
     </div>
     <hr class="border-gray-500" />
   </div>
