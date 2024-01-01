@@ -18,7 +18,7 @@ const recentPosts = allPosts.slice(0, 1);
             {title}
           </a>
           <span class="text-gray-500 text-sm lg:text-base">{date}</span>
-          <span class="text-gray-500 text-sm lg:text-base">{formatTags(tags)}</span>
+          <span class="text-gray-500 text-sm">tags: {formatTags(tags)}</span>
           <a
             href={url}
             class="w-max block mt-4 line-clamp-1 text-sm lg:text-base"

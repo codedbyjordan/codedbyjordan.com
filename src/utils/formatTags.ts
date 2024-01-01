@@ -1,3 +1,3 @@
 export function formatTags(tags: string) {
-  tags.split(",").map((tag) => `[${tag}] `);
+  return tags.split(",").map((tag) => `[${tag}] `);
 }
