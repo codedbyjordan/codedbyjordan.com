@@ -1,7 +1,5 @@
 import type { APIRoute } from "astro";
 
-export const prerender = false;
-
 type OfflineResponse = {
   isOnline: false;
   name?: undefined;

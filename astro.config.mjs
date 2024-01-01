@@ -11,6 +11,6 @@ export default defineConfig({
       theme: "monokai",
     },
   },
-  output: "hybrid",
+  output: "server",
   adapter: vercel(),
 });
