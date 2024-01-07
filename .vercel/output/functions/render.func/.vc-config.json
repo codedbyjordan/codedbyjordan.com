@@ -1,6 +1,0 @@
-{
-	"runtime": "nodejs20.x",
-	"handler": "root/Projects/codedbyjordan.com/dist/entry.mjs",
-	"launcherType": "Nodejs",
-	"supportsResponseStreaming": true
-}
