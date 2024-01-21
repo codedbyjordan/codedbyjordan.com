@@ -2,8 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import TechStack from "../components/TechStack.astro";
 import Accomplishments from "../components/Accomplishments.astro";
-import SpotifyWidget from "../components/SpotifyWidget.astro";
-import ClickableImage from "../components/ClickableImage.svelte";
+import { SpotifyWidget } from "../components/spotify/SpotifyWidget";
+import { ClickableImage } from "../components/ClickableImage.tsx";
 ---
 
 <Layout title="Home">
@@ -43,7 +43,7 @@ import ClickableImage from "../components/ClickableImage.svelte";
       alt="Jordan and Lacy"
       width={256}
       height={256}
-      client:load
+      client:only="solid-js"
     />
   </div>
 </Layout>

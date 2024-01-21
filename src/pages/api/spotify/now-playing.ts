@@ -14,7 +14,7 @@ type OnlineResponse = {
   albumArt: string;
 };
 
-type NowPlayingResponse = OfflineResponse | OnlineResponse;
+export type NowPlayingResponse = OfflineResponse | OnlineResponse;
 
 const clientId = import.meta.env.SPOTIFY_CLIENT_ID;
 const clientSecret = import.meta.env.SPOTIFY_CLIENT_SECRET;
