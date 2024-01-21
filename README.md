@@ -1,3 +1,3 @@
 ## codedbyjordan.com
 
-My personal site built with Astro and Svelte.
+My personal site built with Astro and Solid.
