@@ -7,7 +7,16 @@ const formattedPathname = pathname.split("/")[1];
   class="flex justify-between items-center text-white flex-col lg:flex-row gap-2 lg:gap-0"
 >
   <div class="text-xl">
-    <span class="font-medium">codedbyjordan</span>
+    <div class="flex items-center gap-4">
+      <img
+        src="/chimp-thinking.jpg"
+        alt="Chimp thinking"
+        width="48"
+        height="48"
+        class="aspect-square object-cover"
+      />
+      <span class="font-medium">codedbyjordan</span>
+    </div>
     {
       pathname !== "/" && (
         <span class="text-gray-400">/ {formattedPathname}</span>
