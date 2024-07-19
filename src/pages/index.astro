@@ -5,6 +5,7 @@ import Accomplishments from "../components/Accomplishments.astro";
 import Projects from "../components/Projects.astro";
 import { SpotifyWidget } from "../components/spotify/SpotifyWidget";
 import { ClickableImage } from "../components/ClickableImage.tsx";
+import Testimony from "../components/Testimony.astro";
 ---
 
 <Layout title="Home">
@@ -12,29 +13,29 @@ import { ClickableImage } from "../components/ClickableImage.tsx";
     <h1 class="text-3xl font-medium">
       <span class="text-gray-500">//</span> welcome!
     </h1>
-    <p class="text-sm lg:text-base">my name is Jordan Baron. I am a</p>
-    <ul
-      class="list-inside list-disc flex flex-col gap-1 ml-2 text-sm lg:text-base"
-    >
-      <li>self-taught programmer</li>
-      <li>
-        software developer @ <a
-          href="https://froggyfriends.io"
-          target="_blank"
-          class="underline">froggy labs</a
-        >
-      </li>
-      <li>
-        software engineer @ <a
-          href="https://heirloom.io"
-          target="_blank"
-          class="underline">heirloom</a
-        >
-      </li>
-      <li>aspiring...many things</li>
-    </ul>
+    <p class="text-sm lg:text-base">
+      my name is Jordan Baron. I am a self-taught programmer who has been at it
+      since I was eleven, with two years of professional experience. I primarily
+      do frontend stuff, but I have backend experience and am currently diving
+      into low level programming with Zig. I am currently open to full-time and
+      contract work! Shoot me an email at <a
+        href="mailto:jordannbaron@gmail.com"
+        target="_blank"
+        class="underline">jordannbaron@gmail.com</a
+      > if you're interested in hiring me.
+    </p>
   </div>
-
+  <div>
+    <span class="font-medium text-lg block mb-2"
+      >Here's what others have to say about me:</span
+    >
+    <Testimony
+      name="Julian Vergel de Dios"
+      description="Co-founder and CTO @ Project Heirloom, Inc."
+      image="/jvd.jpg"
+      value="Jordan is one of those rare young engineering talents that just relishes in problem-solving. Doesn't matter what language, what framework, he just dives in and figures it out. Any team looking to hire him would be lucky to have him."
+    />
+  </div>
   <SpotifyWidget />
   <Projects />
   <TechStack />

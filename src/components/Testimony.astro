@@ -1,0 +1,14 @@
+---
+const { name, description, image, value } = Astro.props;
+---
+
+<div class="p-4 rounded-md border border-gray-300">
+  <p class="italic">"{value}"</p>
+  <div class="w-full flex items-center gap-2 ml-auto">
+    <img src={image} alt="Testifier" class="w-10 h-10 rounded-full" />
+    <div class="flex flex-col text-sm">
+      <span class="block mt-2 font-medium">{name}</span>
+      <span class="text-gray-300">{description}</span>
+    </div>
+  </div>
+</div>
